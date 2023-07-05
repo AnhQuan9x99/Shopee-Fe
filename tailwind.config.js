@@ -1,40 +1,18 @@
-const defaultTheme = require('tailwindcss/defaulttheme');
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
-  important: true,
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/containers/**/*.{js,ts,jsx,tsx}',
-    './src/layouts/**/*.{js,ts,jsx,tsx}',
-    "./src/**/*.{html,js}"
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    screens: {
-      xs: '320px',
-      '2xs': '480px',
-      '2k': '2048px',
-      '2k+' : '2560px',
-      '4k':'4096px',
-      ...defaultTheme.screens
-    },
     extend: {
-      transitionProperty: {
-        height: 'height',
-        width: 'width'
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-      
-      },
-      borderRadius: {
-        10: '10px'
-      },
-      spacing: {
-        128: '32rem'
-      }
-    }
+    },
   },
-  plugins: []
-};
+  plugins: [],
+}
