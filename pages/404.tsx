@@ -1,5 +1,5 @@
+import { Layout } from "@layouts/Layout";
 import Link from "next/link";
-import { Layout } from "src/Layout";
 
 const Page404 = () => (
   <>

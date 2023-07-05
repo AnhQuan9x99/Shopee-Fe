@@ -15,11 +15,11 @@ export const InfoPart: React.FC<Props> = () => {
   const listInfo: InfoPartType[] = [
     {
       label: "Kênh Người Bán",
-      href: "/",
+      href: "/profile",
     },
     {
       label: "Trở Thành Người Bán Shopee",
-      href: "/",
+      href: "/s",
     },
     {
       label: "Tải Ứng Dụng",
@@ -31,13 +31,13 @@ export const InfoPart: React.FC<Props> = () => {
     },
   ];
   return (
-    <div className="flex justify-between">
-      {/* {listInfo.map((item: InfoPartType) => {
-        <Link href={item.href}>
-          <a>{item.label}</a>
-        </Link>;
-      })} */}
-      heello
+    <div className="flex flex-row h-full text-[red]">
+      {listInfo?.map((item :InfoPartType , key:any) => (
+<Link href={item.href} key={item.label} passHref>
+          <p className="text-[red]">{item.label}</p>
+        </Link>
+      
+      ))}
     </div>
   );
 };

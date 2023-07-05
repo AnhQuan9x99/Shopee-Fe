@@ -9,7 +9,7 @@ type Props = {
 
 export const Header: React.FC<Props> = () => {
   return (
-    <div className="header-wrap flex justify-between w-[80%]">
+    <div className="header-wrap flex justify-between flex-row w-full bg-[#F94B2F] h-[70px]">
       <InfoPart />
       <UserPart />
     </div>
