@@ -1,0 +1,19 @@
+# Ignore artifacts:
+dist
+.next
+build
+node_modules/
+.babelrc
+.env
+.eslintignore
+.eslintrc.json
+.gitignore
+.stylelintrc.json
+babel.config.js
+mui-imports-plugin.js
+next-env.d.ts
+next.config.js
+next.d.ts
+package.json
+tsconfig.json
+yarn.lock
